@@ -28,10 +28,20 @@ author = 'TiDu Nguyen - Nguyen Tien Duc'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx_rtd_theme',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.todo',
+    'sphinx.ext.graphviz',
+    'sphinx.ext.mathjax',
+    'sphinx.ext.autosummary',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
+source_suffix = '.rst'
+locale_dirs = ['locale/']
+gettext_compact = False
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -44,27 +54,26 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+
+master_doc = 'index'
+html_theme = 'sphinx_rtd_theme'
 
 html_theme_options = {
-    "github_user": "tidunguyen",
-    "github_repo": "cd4ml-docs",
-    "github_type": "star",
-    "github_banner": True,
-    "description": "Documentation of CD4ML project for Thesis at International University",
-    "show_relbars": True,
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'both',
+    # 'style_external_links': True,
+    'vcs_pageview_mode': 'edit',
+    # 'style_nav_header_background': 'white',
+    # Toc options
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
 }
 
-html_sidebars = {
-    "**": [
-        "about.html",
-        "sidebarlogo.html",
-        "localtoc.html",
-        "navigation.html",
-        "relations.html",
-        "searchbox.html",
-    ]
-}
+html_show_sourcelink = True
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

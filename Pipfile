@@ -8,6 +8,8 @@ name = "pypi"
 [dev-packages]
 sphinx = "*"
 autopep8 = "*"
+sphinx-rtd-theme = "*"
+sphinx-autobuild = "*"
 
 [requires]
 python_version = "3.8"
