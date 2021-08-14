@@ -1,0 +1,9 @@
+[submodule "festaf"]
+	path = festaf
+	url = https://github.com/tidunguyen/festaf
+[submodule "anemoi"]
+	path = anemoi
+	url = https://github.com/tidunguyen/anemoi
+[submodule "e2e-ml"]
+	path = e2e-ml
+	url = https://github.com/tidunguyen/e2e-ml
