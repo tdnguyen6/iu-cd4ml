@@ -7,3 +7,6 @@
 [submodule "e2e-ml"]
 	path = e2e-ml
 	url = https://github.com/tidunguyen/e2e-ml
+[submodule "jupIDE"]
+	path = jupIDE
+	url = https://github.com/tidunguyen/jupIDE
