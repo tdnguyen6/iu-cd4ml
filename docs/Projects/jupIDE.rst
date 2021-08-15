@@ -2,6 +2,10 @@
 jupIDE
 ***********
 
+This page host the documentation for **jupIDE** project.
+
+----------------------------------
+
 .. contents:: Table of Contents
     :local:
 

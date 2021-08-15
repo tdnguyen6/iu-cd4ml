@@ -10,6 +10,8 @@ This is the documentation for all my projects in CD4ML field for Bachelor's thes
 
 Read the complete documentation at: `iu-cd4ml.readthedocs.io <https://iu-cd4ml.readthedocs.io>`_
 
+----------------------------------
+
 .. contents:: Table of Contents
     :local:
 
@@ -43,7 +45,7 @@ Here is a comparison of featurestores from `featurestore.org <https://featuresto
 
 As the only available open-source featurestore, Feast gain traction easily. However, Feast is kind of a low-priority project for the maintaining organizations. Despite being developed for almost 3 years, it is still very basic, lacking a lot of features. Even feast admitted that they lack some crucial features, taken from `docs.feast.dev <https://docs.feast.dev>`_:
 
-.. figure::  docs/_static/feast-problems.png
+.. figure:: docs/_static/feast-problems.png
 
     Feast problems.
 

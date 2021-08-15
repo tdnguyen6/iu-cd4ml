@@ -2,6 +2,10 @@
 e2e-ml
 ***********
 
+This page host the documentation for **e2e-ml** project.
+
+----------------------------------
+
 .. contents:: Table of Contents
     :local:
 

@@ -2,6 +2,10 @@
 anemoi
 ***********
 
+This page host the documentation for **anemoi** project.
+
+----------------------------------
+
 .. contents:: Table of Contents
     :local:
 

@@ -2,6 +2,10 @@
 festaf
 ***********
 
+This page host the documentation for **festaf** project.
+
+----------------------------------
+
 .. contents:: Table of Contents
     :local:
 
