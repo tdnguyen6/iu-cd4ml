@@ -1,6 +1,8 @@
 #################
-Sprint Execution
+Sprints Execution
 #################
+
+This page host the documentations or the execution of sprints in the project.
 
 ------------------------------------------
 
