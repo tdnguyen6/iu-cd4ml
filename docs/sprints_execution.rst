@@ -7,6 +7,7 @@ This page host the documentations or the execution of sprints in the project.
 ------------------------------------------
 
 .. contents:: Table of contents
+    :local:
 
 ------------------------------------------
 

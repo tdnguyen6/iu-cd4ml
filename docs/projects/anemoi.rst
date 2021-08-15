@@ -211,7 +211,7 @@ Story Execution
       - 
 
 Framework Stack of choice
-===============
+=========================
 
 Anemoi server
 -------------
