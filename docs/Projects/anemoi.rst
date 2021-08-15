@@ -2,22 +2,98 @@
 anemoi
 ***********
 
-alkfjsalkjdfalskjdf
-===================
+.. contents:: Table of Contents
+    :local:
 
+----------------------------------
 
-alk fjs alkjdfa lskj32f
-=======================
+Introduction
+============
 
+Motivation
+----------
 
+Problem statement
+-----------------
 
-alkfj salkjdf alsk134f
+Scope
+-----
+
+Literature Review
 ======================
 
+Similar systems
+---------------
+
+Review similar systems
+----------------------
+
+Requirement Analysis
+====================
+
+User stories
+------------
+
+Usecase Descriptions
+--------------------
+
+Functional requirements
+-----------------------
+
+Non-functional requirements
+---------------------------
+
+System Design
+======================
+
+Packages and Modules
+--------------------
+
+Tools and Techniques
+--------------------
+
+Diagrams
+---------
+
+Usecase Diagram
+^^^^^^^^^^^^^^^
+
+Sequence Diagrams
+^^^^^^^^^^^^^^^^^^^^
+
+Activity Diagrams
+^^^^^^^^^^^^^^^^^^^^
+
+E-R Diagrams
+^^^^^^^^^^^^^^^^^^^^
+
+Class Diagrams
+^^^^^^^^^^^^^^^^^^^
 
 
-alkfj salkjd fals ks12f
+System Implementations
+======================
+
+Sprint 1
+---------
+
+Sprint 2
+---------
+
+Anemoi Progress
 =======================
 
+Problems anemoi solved
+--------------------------
 
-hello from anemoi
+Problems anemoi yet to solve
+--------------------------------
+
+anemoi compared to other systems
+-------------------------------------
+
+Future roadmap of anemoi
+----------------------------
+
+References
+=======================

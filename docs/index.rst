@@ -3,18 +3,14 @@
     :caption: Shared Docs
     :maxdepth: 4
 
-    Shared/value
-    Shared/stories
-    
+    readme_link
     
 .. toctree::
     :hidden:
-    :caption: Docs By Projects
+    :caption: Docs By Project
     :maxdepth: 4
+    :glob:
     
-    Projects/anemoi
-    Projects/festaf
-    Projects/e2e-ml
-    Projects/jupIDE
+    ./Projects/*
     
-.. include:: ../README.rst
+    
