@@ -2,6 +2,10 @@
 CD4ML - MLOps
 ###############
 
+.. image:: https://readthedocs.org/projects/iu-cd4ml/badge/?version=latest
+    :target: https://iu-cd4ml.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
 This is the documentation for all my projects in CD4ML field for Bachelor's thesis at International University 2021-2022
 
 Read the complete documentation at: `iu-cd4ml.readthedocs.io <https://iu-cd4ml.readthedocs.io>`_
@@ -33,13 +37,13 @@ There are a lot of featurestore solutions currently existing. Nevertheless, most
 
 Here is a comparison of featurestores from `featurestore.org <https://featurestore.org>`_:
 
-.. figure:: _static/featurestore-compare.png
+.. figure:: docs/_static/featurestore-compare.png
 
     Feature store comparison table.
 
 As the only available open-source featurestore, Feast gain traction easily. However, Feast is kind of a low-priority project for the maintaining organizations. Despite being developed for almost 3 years, it is still very basic, lacking a lot of features. Even feast admitted that they lack some crucial features, taken from `docs.feast.dev <https://docs.feast.dev>`_:
 
-.. figure:: _static/feast-problems.png
+.. figure::  docs/_static/feast-problems.png
 
     Feast problems.
 
