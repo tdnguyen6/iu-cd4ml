@@ -4,6 +4,7 @@
     :maxdepth: 4
 
     readme_link
+    sprint_execution
     
 .. toctree::
     :hidden:
