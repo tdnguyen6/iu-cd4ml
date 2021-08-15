@@ -12,6 +12,6 @@
     :maxdepth: 4
     :glob:
     
-    ./Projects/*
+    ./projects/*
 
 .. include:: readme_link.rst
