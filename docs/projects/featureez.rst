@@ -154,7 +154,8 @@ Framework Stack of choice
 =========================
 
 featureez server
--------------
+----------------
+
 Web stack:
 
 * Django
