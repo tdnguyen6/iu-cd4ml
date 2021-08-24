@@ -1,6 +1,6 @@
-***********
+**********
 e2e-ml
-***********
+**********
 
 This page host the documentation for **e2e-ml** project.
 
@@ -11,93 +11,227 @@ This page host the documentation for **e2e-ml** project.
 
 ----------------------------------
 
-Introduction
-============
+Product Backlog
+===============
 
-Motivation
-----------
-
-Problem statement
------------------
-
-Scope
------
-
-Literature Review
-======================
-
-Similar systems
----------------
-
-Review similar systems
-----------------------
-
-Requirement Analysis
-====================
 
 User stories
-------------
+=============
 
-Usecase Descriptions
---------------------
+Story Table
+-----------
 
-Functional requirements
------------------------
+.. list-table:: User stories table
+    :widths: 2 8 45 45
+    :header-rows: 1
+    :stub-columns: 1
+    
+    * - Id
+      - As a(n)
+      - I want to (be able to)
+      - so that (I can)
+..     * - 1
+..       - airflow user
+..       - be able to export DAGs
+..       - share it with other people
+..     * - 2
+..       - airflow user
+..       - be able to import DAGs
+..       - reuse DAGs from other people
+..     * - 3
+..       - anemoi user
+..       - search for DAGs on anemoi UI
+..       - easily discover DAGs relevant to me
+..     * - 4
+..       - anemoi user
+..       - visual DAGs on anemoi UI
+..       - know the basic flows of the DAGs
+..     * - 5
+..       - anemoi user
+..       - apply below filters to searched DAGs:
 
-Non-functional requirements
----------------------------
+..         * label
+..         * upvotes
+..         * ratings
+..         * tags
+..         * categories
+..         * user
+..         * airflow version
+..         * executors type
+..         * operators type
+..       - | give more specific requirements
+..         | about the DAGs that I need
+..     * - 6
+..       - anemoi user
+..       - | quickly find out basic info of
+..         | searched DAGs like:
 
-System Design
-======================
+..         * DAG version
+..         * airflow version
+..         * executors type
+..         * operators type
+..         * input
+..         * output
+..         * xcoms (shared data)
+..         * schedule
+..         * system requirements:
+            
+..           * Memory
+..           * CPU
+..           * Diskspace
+..           * Network
+..       - Immediately know if a DAG is suitable
+..     * - 7
+..       - anemoi user
+..       - | upvote a useful DAGs
+..         | downvote a useless DAGs
+..       - | leave hints about how useful
+..         | each DAG is for other users
+..     * - 8
+..       - anemoi user
+..       - rate and comment on a DAG
+..       - | express my opinion and experience
+..         | after on a DAG
+..     * - 9
+..       - anemoi user
+..       - authenticate me on anemoi
+..       - | do other things within anemoi
+..         | as an authorized user
+..     * - 10
+..       - anemoi user
+..       - limit the access scope of my DAG
+..       - share DAGs only to the people I want
+..     * - 11
+..       - anemoi user
+..       - | update my DAG on anemoi
+..         | with newer versions
+..       - make sure my DAG has no issue
+..     * - 12
+..       - anemoi user
+..       - fork another user's DAG
+..       - | improve other user's DAG
+..         | or provide new feature
+..         | for that DAG. For example,
+..         | provide a different DAG
+..         | version that can use another
+..         | executor type
+..     * - 13
+..       - anemoi user
+..       - | compare DAGs across 
+..         | versions and forks
+..       - | know which version or fork
+..         | of a DAG to choose
+..     * - 14
+..       - anemoi user
+..       - | set parameters on my
+..         | exported DAG
+..       - | people who import my DAG
+..         | can easily customize it
+..         | to their needs
 
-Packages and Modules
---------------------
+Story Execution
+---------------
 
-Tools and Techniques
---------------------
+.. .. list-table:: Stories execution table
+..     :widths: 1 9 10 20 60
+..     :header-rows: 1
+..     :stub-columns: 1
 
-Diagrams
----------
+..     * - Id
+..       - Point(s)
+..       - sprint no.
+..       - Status
+..       - Remark
+..     * - 1
+..       - 8
+..       - TBD
+..       - new
+..       - 
+..     * - 2
+..       - 8
+..       - TBD
+..       - new
+..       - 
+..     * - 3
+..       - 3
+..       - TBD
+..       - new
+..       - 
+..     * - 4
+..       - 13
+..       - TBD
+..       - new
+..       - 
+..     * - 5
+..       - 3
+..       - TBD
+..       - new
+..       - 
+..     * - 6
+..       - 3
+..       - TBD
+..       - new
+..       - 
+..     * - 7
+..       - 3
+..       - TBD
+..       - new
+..       - 
+..     * - 8
+..       - 3
+..       - TBD
+..       - new
+..       - 
+..     * - 9
+..       - 1
+..       - 1
+..       - in progress
+..       - 
+..     * - 10
+..       - 3
+..       - TBD
+..       - new
+..       - 
+..     * - 11
+..       - 3
+..       - TBD
+..       - new
+..       - 
+..     * - 12
+..       - 5 
+..       - TBD
+..       - new
+..       - 
+..     * - 13
+..       - 21
+..       - TBD
+..       - new
+..       - 
+..     * - 14
+..       - 5
+..       - TBD
+..       - new
+..       - 
 
-Usecase Diagram
-^^^^^^^^^^^^^^^
+Framework Stack of choice
+=========================
 
-Sequence Diagrams
-^^^^^^^^^^^^^^^^^^^^
+.. Anemoi server
+.. -------------
+.. Web stack:
 
-Activity Diagrams
-^^^^^^^^^^^^^^^^^^^^
+.. * Django
+.. * Vuejs
+.. * Tailwindcss
 
-E-R Diagrams
-^^^^^^^^^^^^^^^^^^^^
+.. Anemoi client
+.. -------------
 
-Class Diagrams
-^^^^^^^^^^^^^^^^^^^
+.. Tools:
+
+.. * Python
+.. * Airflow
+
+.. Direction: develop as an airflow plugin
 
 
-System Implementations
-======================
-
-Sprint 1
----------
-
-Sprint 2
----------
-
-e2e-ml Progress
-=======================
-
-Problems e2e-ml solved
---------------------------
-
-Problems e2e-ml yet to solve
---------------------------------
-
-e2e-ml compared to other systems
--------------------------------------
-
-Future roadmap of e2e-ml
-----------------------------
-
-References
-=======================

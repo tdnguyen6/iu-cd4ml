@@ -1,0 +1,18 @@
+@startuml fsm activity
+|feature creator|
+start
+:create git repo;
+group fsm config file
+    :select features;
+    :select timestamp;
+    :
+    :set repo link;
+    :set entry point;
+end group
+:set git ignore;
+group fsm cli
+    :init feature (pull into parquet file)
+    :
+
+end
+@enduml

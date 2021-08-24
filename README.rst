@@ -28,8 +28,8 @@ Machine learning is an emerging but attractive field as ML can bring solutions t
 Vision & Ideas
 ***************
 
-Vision
-======
+Visions
+=======
 
 In my thesis, I set out to solve some of the current problems faced by MLOps systems.
 
@@ -52,7 +52,7 @@ As the only available open-source featurestore, Feast gain traction easily. Howe
 Besides, there are other problems that I found after having used feast for a while:
 
 * Only support time-series data. Many teams has requested them to support other kinds of data, especially for datasets without timestamps
-* Tightly coupled to Tecton and Gojek workflow:
+* Tightly coupled to Gojek workflow:
 
   #. Gathering timestamped data
   #. Do feature engineering and store features in offline store
@@ -73,65 +73,21 @@ Besides, there are other problems that I found after having used feast for a whi
 Due to all the reasons above, Feast, despite being popular, is being adopted very slowly, usually by teams that have data fit into Feast workflow and allow to spend time on customizing Feast. Three years in existence, even as the only choice for feature store, Feast only has 2.1k stars on GitHub.
 
 
-Ideas
-=====
+featureez
+=========
 
-festaf
-------
+**featureez** is a next-generation feature store, completely open source, supporting a lot of advanced features compared to the currently existing feature store solutions like **feast**. 
 
-In order to push for wider adoption of feauture store in ML projects, I set out to create a new open source feature store that can solve at least some or all the problems of Feast. This is the **festaf** project, **festaf** stand for **fe**\ture **st**\ore on **a**\ir\ **f**\low. I chose Apache AirFlow, the currently most popular workflow orchestration tool for data systems, as the underline ETL pipeline for my feature store. Yes, it is better to support all workflow orchestration tools. However, due to the massive amount of differences between them, I chose not to and focus on the most popular one only.
+The design of **featureez** does not have much in common to other feature stores, it hopes to bring a new perspective to the current feature store paradigm.
 
-anemoi
-------
-
-In order for **festaf** to work, we need a way to share and reuse AirFlow pipelines (called *DAG*) easily. Therefore, the **anemoi** project is created to provide:
-
-#. A platform for sharing and discovering AirFlow DAGs
-#. An AirFlow plugin to import, export DAGs
-
-Leverage **anemoi**, **festaf** will be able to provides links to the AirFlow DAGs that were the ETL pipelines to create the features. More details will be described in the **festaf** documentation.
-
-**anemoi** project is expected to be ahead of **festaf** as **festaf** requires at least an MVP from **anemoi**.
-
-*J4F: In ancient Greek religion and myth, the Anemoi (Greek: Ἄνεμοι, "Winds") were wind gods who were each ascribed a cardinal direction from which their respective winds came (see Classical compass winds), and were each associated with various seasons and weather conditions. => Wind gods control AirFlow ^^*
+As an open source solution, **featureez** expects to become the go to feature store for the community. If **featureez** is widely adopted by the community, it can create an explosion in feature engineering and in machine learning in general due to the ability to share and reuse features with each other.
 
 e2e-ml
-------
+======
 
-This is simply an Electron app using different :code:`BrowserView` components to render MLOps tools in an ML life cycle. For example, one view for AirFlow, another view for a Feature Store and another view for a Metadata Store.
+This is simply an Electron app using different :code:`BrowserView` components to render MLOps tools in an ML life cycle. For example, one view for AirFlow, one for a Feature Store and another view for a Metadata Store.
 
 The purpose of this project is to showcase the enhancements that MLOps can bring to the ML lifecycle.
-
-
-jupIDE
-------
-
-Currently, most data scientists start the project will jupyter notebooks. I have stumbled upon a lot of "ML projects" that lie within a single jupyter notebok. It creates tons of problems:
-
-* hard to index
-* hard to search for symbols and their definitions
-* hard to test
-* hard to version control
-* hard to maintain
-* hard to debug
-* hard to do linting
-* hard to package into reusable format
-* hard for intellisense to work
-* hard to reused code snippets
-* and a lot more...
-
-
-In a discussion on *reddit* about where data scientists usually end up with bad code, a response saying that exploratory data analysis (EDA) in *Jupyter notebooks* is where he usually end up with bad code. Therefore, his team, in order to be reproducible, usually move everything to functions, then classes, then modules, then to separate scripts. This is not his own experience, many other data scientists also epxress the same frustrations.
-
-    "Data scientists love the *story telling* ability of notebooks, but only when they do EDA"
-
-This creates a need to quickly convert code from jupter notebooks into IDE workflow (modules in separate script files and folders).
-
-On the other hand, some data scientists start with an IDE workflow, but then are required to convert all their work into notebooks in order to share with others. One example is that tutorials about machine learning, like the ones on Kaggle, are always in a single notebook. This is because notebooks are best in story-telling and also easy to run on Kaggle or Colab without spending time on downloading and setting up the project.
-
-*jupIDE* project aims to create a bridge between Jupyter notebook and IDE workflow of, but not limiting to, data scientists. This bridge allow users to convert the workflows from one form to another, seamlessly syncing between the 2 kinds of workflow.
-
-This is a **low priority** project and might not be started if the other projects are not in good progress.
 
 ***********
 Resources
